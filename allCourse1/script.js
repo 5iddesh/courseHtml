@@ -73,5 +73,33 @@ function handleSortClick(e){
       targetEl.nextElementSibling.style.display = "block"
   }else{
       targetEl.nextElementSibling.style.display = "none"
+
+
+      const courses = document.querySelectorAll(".course");
+      console.log(courses)
+      const showOptions = targetEl.nextElementSibling.querySelectorAll(".active");
+
+      let arr = []
+      showOptions.forEach(showOp => {
+        arr.push(showOp.innerText);
+      })
+      
+      console.log(arr)
+      let i=0;
+      courses.forEach(c => c.style.display = "none");
+
+      courses.forEach(c => {
+        for(op of arr){
+            if(c.classList.contains(op)) {
+              console.log("block", c, op)
+            c.style.display = "block"
+          }
+        }
+
+        i++;
+      })
   }
+
+
+
 }

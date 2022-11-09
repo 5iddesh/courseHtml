@@ -1,0 +1,166 @@
+.inside-course{
+    /* border: 5px solid; */
+    display: flex;
+    margin-left: 20%;
+    margin-top: 30px;
+    padding-inline: 30px;
+}
+
+.i-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.i-header h1{
+    align-self: flex-start;
+}
+
+.i-main{
+    margin-top: 50px;
+    width: 50vw;
+}
+
+.i-video{
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.i-course-description{
+    margin-inline: 5%;
+}
+.i-mentor-description{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin-top: 25px;
+}
+.i-mentor-name{
+    font-weight: 400;
+font-size: 14px;
+line-height: 200%;
+color: #141522;
+padding-left: 10px;
+cursor: pointer;
+}
+.i-designation{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 200%;
+    color: #9C9CA4;
+    border-left: 1px solid #DFDFDF;
+    border-right: 1px solid #DFDFDF;
+    padding-inline: 10px;
+    margin-inline: 10px
+}
+.i-rating{
+    margin-left: auto;
+}
+.i-mentor-followed{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 200%;
+    cursor: pointer;
+    color: #04A4F4;
+}
+.i-mentor-not-followed{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 200%;
+    cursor: pointer;
+    color: #9C9CA4;
+}
+.i-flex1{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin-top: 25px;
+    gap: 15px;
+    align-items: center;
+}
+.i-flex1 img{
+    height: 15px;
+}
+.i-flex1 div{
+    display: flex;
+    gap: 5px;
+}
+.i-flex1-last{
+    margin-left: auto;
+}
+
+
+.i-toggle-flex{
+    display: flex;
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.i-toggle-option{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #9C9CA4;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    width: 20%;
+    margin-right: 5%;
+    text-align: center;
+    cursor: pointer;
+}
+.i-toggle-flex .active{
+    color: #141522;
+    border-bottom: 2px solid yellow;
+}
+
+.i-toggle-description h2{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    color: #141522;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.i-toggle-description p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.i-tick-circle{
+    display: flex;
+    gap: 15px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.i-right{
+    width: 30%;
+    margin-left: 4%;
+    margin-top: 50px;
+}
+
+
+
+
+@media screen and (max-width:700px){
+    .i-header{
+        margin-inline: 5%;
+    }
+}
+
+@media screen and (max-width:800px){
+    .i-header{
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+    }
+    .i-header .i-login{
+        align-self: flex-end;
+        margin-top: -70px;
+        margin-bottom: 15px;
+        z-index: 10;
+    }
+}

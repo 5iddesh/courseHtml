@@ -1,0 +1,269 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-style: normal;
+}
+
+.ac-center{
+    /* width: 100vw; */
+    /* padding-left: 20%; */
+    padding-right: 80px;
+}
+.header{
+    padding-top: 30px;
+    height: auto!important;
+    flex-direction: column;
+}
+.header1{
+    display: flex;
+    justify-content: space-between;
+}
+.header1 h1{
+    align-self: flex-start;
+}
+.header2{
+    display: flex;
+    justify-content: flex-end;
+    gap: 5%;
+    align-items: center;
+    padding-right: 50px;
+}
+.header2> div{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.sort-click{
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+gap: 14px;
+
+width: 96px;
+height: 50px;
+
+/* Neutral/Soft Grey */
+
+border: 1px solid #F5F5F7;
+border-radius: 10px;
+
+}
+.header2 .sort-options{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    width: 300px;
+    z-index: 10000;
+    
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #141522;
+    padding: 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 50px 100px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+
+    position: absolute;
+    right: 25%;
+    /* top: 34%; */
+    display: none;
+
+}
+.sort-options div{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.sort-options .active{
+    background: black;
+    color: white;
+}
+.sort-options h2{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #141522;
+}
+.sort-option{
+    padding: 9px 30px;
+    width: 74px;
+    height: 36px;
+    background: #FFFFFF;
+    border: 1px solid #F5F5F7;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header2 img{
+    width: 17px;
+    height: 17px;
+}
+.header2 .input{
+
+    justify-self: flex-start;
+}
+.header2 input{
+    width: 200px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    padding-left: 15px;
+    color: #9C9CA4;
+    border: none;
+outline: none;
+border-bottom: 1px solid gray;
+}
+/* .header2 .input::after{
+    content: url(".../public/assets/search-normal.svg");
+} */
+.header2 p{
+    font-weight: 400;
+font-size: 12px;
+line-height: 150%;
+/* identical to box height, or 18px */
+
+
+/* Neutral/Black */
+
+color: #141522;
+}
+
+
+.courses{
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 5%;
+}
+.course{
+    overflow: hidden;
+    width: 30%;
+    min-width: 280px;
+    margin-bottom: 40px;
+    /* z-index: -1; */
+}
+.course>img{
+    width: 100%;
+}
+.course-mentor{
+    display: flex;
+    justify-content: space-between;
+    /* width: 30%; */
+}
+.course-mentor div{
+    display: flex;
+    align-items: center;
+}
+.course-mentor div p{
+    font-weight: 400;
+font-size: 14px;
+line-height: 200%;
+/* identical to box height, or 28px */
+
+
+/* Neutral/Dark Grey */
+
+color: #9C9CA4;
+
+}
+.course-info{
+    display: flex;
+    width: 100%;
+    gap: 8px;
+}
+.course-info div{
+    width: 33%;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    font-weight: 400;
+font-size: 14px;
+line-height: 200%;
+/* identical to box height, or 28px */
+
+
+/* Neutral/Black */
+
+color: #141522;
+
+}
+.course-info img{
+    width: 17px;
+    height: 17px;
+}
+.course h3{
+    margin: 10px 0;
+}
+.course-mentor{
+    margin: 10px 0;
+    margin-right: 15px;
+}
+
+@media screen and (max-width:800px){
+    .course{
+        width: 95%;
+    }
+    .header{
+        padding-top: 40px;
+    }
+    .header1{
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+    }
+    .header1 .login{
+        align-self: flex-end;
+        margin-top: -70px;
+        margin-bottom: 15px;
+        z-index: 10;
+    }
+    
+    .ac-center{
+        padding-left: 30px;
+    padding-right: 30px;
+    }
+}
+
+
+.ac-center{
+    margin-left: 20%;
+    /* padding-top: 50px; */
+}
+
+@media screen and (max-width: 1100px){
+    .ac-center{
+        margin-left: 0;
+        padding-left: 5%;
+    }
+    .header{
+    padding-top: 80px;
+
+    }
+}
+
+@media screen and (max-width:700px){
+    .header2{
+        padding-right: 0;
+        flex-direction: column;
+    }
+    .sort-options{
+        margin-inline: -14%;
+    }
+    .header1{
+        margin-inline: 5%;
+    }
+    .sort-click{
+        width: 70px;
+        /* padding: 0px 20px; */
+    }
+}

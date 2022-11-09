@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coursea</title>
+    <link href="style.css" rel="stylesheet" />
+    <link href="style copy.css" rel="stylesheet" />
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <noscript>
+       You need to enable JavaScript to run this app.
+    </noscript>
+    <div id="root">
+       <div class="main">
+          <div class="bg-white">
+            <img src="assets/menuhamburger.png" alt="" class="hamburger" onclick="ShandleClickMenu(this)">
+         </div>
+          <img src="assets/closewrong.png" alt="" class="wrong" onclick="ShandleWrong(this)">
+          <div class="side-bar">
+             <div class="logo">
+                <img src="assets/Unionlogo.png" alt="logo" class="logo">
+                <h2 class="logo-name">Coursea</h2>
+             </div>
+
+             <div class="nav">
+                <div class="nav-menu">
+                   <a class="menu active" href="/" onclick="handleMenuActive(this)">
+                      <img src="assets/element-4overview.png" alt="logo">
+                      <p>Overview</p>
+                   </a>
+                   <a class="menu" href="/allCourse1/index.html" onclick="handleMenuActive(this)">
+                      <img src="assets/bookcourses.png" alt="logo">
+                      <p>Courses</p>
+                      <img src="assets/arrow-leftlight-arrow.png" alt="" class="rotate light"><img src="assets/arrow-rightdark-arrow.png" alt="" class="rotate dark">
+                   </a>
+                   <div class="menu" onclick="handleMenuActive(this)">
+                      <img src="assets/user-octagonmentors.png" alt="logo">
+                      <p>Mentors</p>
+                   </div>
+                   <div class="menu" onclick="handleMenuActive(this)">
+                      <img src="assets/message.png" alt="logo">
+                      <p>Message</p>
+                   </div>
+                   <div class="menu" onclick="handleMenuActive(this)">
+                      <img src="assets/setting-4setting.png" alt="logo">
+                      <p>setting</p>
+                   </div>
+                   <a class="upgrade" href="/purchase"><img src="assets/upgrade pro.png" alt="upgrade"></a>
+                </div>
+             </div>
+          </div>
+          <div class="center">
+             <div class="db-header">
+                <div class="db-h-info">
+                   <h2>Hi, Pristia</h2>
+                   <p>Let’s learn something new today!</p>
+                </div>
+                <div class="db-h-menus"><input class="db-search" placeholder="search here"><img src="assets/search-normal.svg" alt="" onclick="handleSearch(this)"><img src="assets/notif.png" alt="notify"><img src="assets/Rectangle 5997login-image.png" alt=""></div>
+             </div>
+             <div class="tracking"><img src="assets/patientdb-img1.png" alt="" class="db-img1"><img src="assets/patientdb-img2.png" alt="" class="db-img2"></div>
+             <section class="mentors">
+                <div class="heading">
+                   <h2>Monthly Mentors</h2>
+                   <div>
+                     <img src="assets/arrow-leftlight-arrow.png" alt="" class="prev"onclick="handleMentorsList(this)" >
+                     <img src="assets/arrow-rightdark-arrow.png" alt="" class="next"onclick="handleMentorsList(this)" >
+                  </div>
+                </div>
+                <div class="content">
+                   <div class="mentor followed show">
+                      <div class="mentor-info">
+                         <img src="assets/photomentor1.png" alt="">
+                         <div>
+                            <h3>Lincoln George</h3>
+                            <p class="gray">UI UX . Design</p>
+                         </div>
+                         <p class="db-c-follow" onclick="handleFollow(this)">+ Follow </p>
+                      </div>
+                      <div class="mentor-course">
+                         <div>
+                            <img src="assets/bookcourses.png" alt="">
+                            <p>100 Course</p>
+                         </div>
+                         <p>4,5 (1.200 Review)</p>
+                      </div>
+                   </div>
+                   <div class="mentor show">
+                      <div class="mentor-info">
+                         <img src="assets/photomentor2.png" alt="">
+                         <div>
+                            <h3>Gustavo Torff</h3>
+                            <p class="gray">UI UX . Design</p>
+                         </div>
+                         <p class="db-c-follow" onclick="handleFollow(this)">Followed </p>
+                      </div>
+                      <div class="mentor-course">
+                         <div>
+                            <img src="assets/bookcourses.png" alt="">
+                            <p>100 Course</p>
+                         </div>
+                         <p>4,5 (1.200 Review)</p>
+                      </div>
+                   </div>
+                   <div class="mentor">
+                      <div class="mentor-info">
+                         <img src="assets/photomentor2.png" alt="">
+                         <div>
+                            <h3>something Torff</h3>
+                            <p class="gray">UI UX . Design</p>
+                         </div>
+                         <p class="db-c-follow" onclick="handleFollow(this)">Followed </p>
+                      </div>
+                      <div class="mentor-course">
+                         <div>
+                            <img src="assets/bookcourses.png" alt="">
+                            <p>100 Course</p>
+                         </div>
+                         <p>4,5 (1.200 Review)</p>
+                      </div>
+                   </div>
+                </div>
+             </section>
+             <section class="monthly-courses">
+                <div class="heading">
+                   <h2>Monthly Courses</h2>
+                   <div>
+                     <img src="assets/arrow-leftlight-arrow.png" alt="" class="prev" onclick="handleCourseList(this)" >
+                     <img src="assets/arrow-rightdark-arrow.png" alt="" class="next" onclick="handleCourseList(this)" >
+                  </div>
+                </div>
+                <div class="db-courses">
+                   <a class="course show" href="/all-course" style="text-decoration: none; color: black;">
+                      <img src="assets/photocourse1.png" alt="">
+                      <h3>Creating Beautifull Landing Page in 1 Hour</h3>
+                      <div class="faculty">
+                         <div>
+                            <img src="assets/photomentor1.png" alt="">
+                            <p>Lincoln George</p>
+                         </div>
+                         <p class="rating">4.5</p>
+                      </div>
+                   </a>
+                   <a class="course show" href="/all-course" style="text-decoration: none; color: black;">
+                      <img src="assets/photocourse2.png" alt="">
+                      <h3>Animation is the Key of Successfull UI/UX Design</h3>
+                      <div class="faculty">
+                         <div>
+                            <img src="assets/photomentor2.png" alt="">
+                            <p>Emerson Siphron</p>
+                         </div>
+                         <p class="rating">4.5</p>
+                      </div>
+                   </a>
+                   <a class="course" href="/all-course" style="text-decoration: none; color: black;">
+                      <img src="assets/photocourse2.png" alt="">
+                      <h3>ldjfsak is the Key of Successfull UI/UX Design</h3>
+                      <div class="faculty">
+                         <div>
+                            <img src="assets/photomentor2.png" alt="">
+                            <p>Emerson Siphron</p>
+                         </div>
+                         <p class="rating">4.5</p>
+                      </div>
+                   </a>
+                </div>
+             </section>
+          </div>
+          <div class="right-bar">
+             <div class="calender">
+                <div class="month">
+                   <img src="assets/arrow-leftlight-arrow.png" alt="" class="prev" onclick="handleMonth(this)" >
+                   <h3><b class="r-month">jan</b> 2022</h3>
+                   <img src="assets/arrow-rightdark-arrow.png" alt="" class="next" onclick="handleMonth(this)" >
+                </div>
+                <div class="day-style">
+                   <div class="days">
+                      <div class="day">S</div>
+                      <div class="date">13</div>
+                   </div>
+                   <div class="days active">
+                      <div class="day">S</div>
+                      <div class="date">13</div>
+                   </div>
+                   <div class="days">
+                      <div class="day">S</div>
+                      <div class="date">13</div>
+                   </div>
+                   <div class="days">
+                      <div class="day">S</div>
+                      <div class="date">13</div>
+                   </div>
+                   <div class="days">
+                      <div class="day">S</div>
+                      <div class="date">13</div>
+                   </div>
+                   <div class="days">
+                      <div class="day">S</div>
+                      <div class="date">13</div>
+                   </div>
+                   <div class="days">
+                      <div class="day">S</div>
+                      <div class="date">13</div>
+                   </div>
+                </div>
+             </div>
+             <div class="db-course-info">
+                <div class="db-r-header">
+                   <p>Today</p>
+                   <div><img src="assets/arrow-leftlight-arrow.png" alt=""><img src="assets/arrow-rightdark-arrow.png" alt=""></div>
+                </div>
+                <img src="assets/course-info/photocourse-info.png" alt="">
+                <h3>UX Design : How To Implement Usability Testing</h3>
+                <div class="course-handler">
+                   <p>Alfredo Rhiel Madsen </p>
+                   <img src="assets/photomentor1.png" alt="">
+                </div>
+                <div class="flex1">
+                   <div>
+                      <img src="assets/course-info/user.png" alt="">
+                      <p>500 student</p>
+                   </div>
+                   <div>
+                      <img src="assets/course-info/document.png" alt="">
+                      <p>5 module</p>
+                   </div>
+                   <div>
+                      <img src="assets/course-info/clock.png" alt="">
+                      <p>1h 30 m</p>
+                   </div>
+                </div>
+                <div class="flex2">
+                   <h3>5 module</h3>
+                   <p>0/5 done</p>
+                </div>
+                <div class="where">
+                   <div>
+                      <p class="sl-no">1</p>
+                      <p>introduction</p>
+                      <p>10:00</p>
+                   </div>
+                   <div>
+                      <p class="sl-no">1</p>
+                      <p>introduction</p>
+                      <p>10:00</p>
+                   </div>
+                   <div>
+                      <p class="sl-no">1</p>
+                      <p>introduction</p>
+                      <p>10:00</p>
+                   </div>
+                   <div>
+                      <p class="sl-no">1</p>
+                      <p>introduction</p>
+                      <p>10:00</p>
+                   </div>
+                   <div>
+                      <p class="sl-no">1</p>
+                      <p>introduction</p>
+                      <p>10:00</p>
+                   </div>
+                </div>
+                <a href="/all-course"><button>Go To Detail</button></a>
+             </div>
+          </div>
+       </div>
+    </div>
+    <!--
+       This HTML file is a template.
+       If you open it directly in the browser, you will see an empty page.
+       
+       You can add webfonts, meta tags, or analytics to this file.
+       The build step will place the bundled scripts into the <body> tag.
+       
+       To begin the development, run `npm start` or `yarn start`.
+       To create a production bundle, use `npm run build` or `yarn build`.
+       -->
+ </body>
+
+
+</html>
+
+
+
+

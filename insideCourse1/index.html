@@ -8,40 +8,47 @@
     <link href="style.css" rel="stylesheet" />
     <link href="style copy.css" rel="stylesheet" />
     <link href="style copy 2.css" rel="stylesheet" />
+    <script src="script.js" defer></script>
 </head>
+
+
 <body>
-    <noscript>
-       You need to enable JavaScript to run this app.
-    </noscript>
-    <div id="root">
-       <div class="inside-course">
-          <div class="bg-white"><img src="assets/menuhamburger.png" alt="" class="hamburger"></div>
-          <img src="assets/closewrong.png" alt="" class="wrong">
+   <noscript>
+      You need to enable JavaScript to run this app.
+   </noscript>
+   <div id="root">
+      <div class="inside-course">
+         <div class="bg-white">
+            <img src="assets/menuhamburger.png" alt="" class="hamburger" onclick="ShandleClickMenu(this)">
+         </div>
+          <img src="assets/closewrong.png" alt="" class="wrong" onclick="ShandleWrong(this)">
           <div class="side-bar">
              <div class="logo">
                 <img src="assets/Unionlogo.png" alt="logo" class="logo">
                 <h2 class="logo-name">Coursea</h2>
              </div>
+
              <div class="nav">
                 <div class="nav-menu">
-                   <a class="menu active" href="/">
+                   <a class="menu" href="/dashboard1/index.html" onclick="handleMenuActive(this)">
                       <img src="assets/element-4overview.png" alt="logo">
                       <p>Overview</p>
                    </a>
-                   <a class="menu" href="/all-course">
+                   <a class="menu active" href="/allCourse1/index.html" onclick="handleMenuActive(this)">
                       <img src="assets/bookcourses.png" alt="logo">
                       <p>Courses</p>
                       <img src="assets/arrow-leftlight-arrow.png" alt="" class="rotate light"><img src="assets/arrow-rightdark-arrow.png" alt="" class="rotate dark">
+
                    </a>
-                   <div class="menu">
+                   <div class="menu" onclick="handleMenuActive(this)">
                       <img src="assets/user-octagonmentors.png" alt="logo">
                       <p>Mentors</p>
                    </div>
-                   <div class="menu">
+                   <div class="menu" onclick="handleMenuActive(this)">
                       <img src="assets/message.png" alt="logo">
                       <p>Message</p>
                    </div>
-                   <div class="menu">
+                   <div class="menu" onclick="handleMenuActive(this)">
                       <img src="assets/setting-4setting.png" alt="logo">
                       <p>setting</p>
                    </div>
@@ -49,157 +56,256 @@
                 </div>
              </div>
           </div>
-          <div>
-             <div class="i-header">
-                <h1>Explore Courses</h1>
-                <div class="i-login"><img src="assetsAc/notif (1).png" alt=""><img src="assetsAc/Rectangle 5997;ogin.png" alt=""></div>
-             </div>
-             <div class="i-main">
-                <div>
-                   <img src="asssetsIC/arrow-left.png" alt="arrow-left" class="i-arrow-left"><img src="asssetsIC/video.png" alt="video" class="i-video">
-                   <div class="i-course-description">
-                      <div class="i-course-main">
-                         <h1>Animation is the Key of Successfull UI/UX Design</h1>
-                         <div class="i-mentor-description">
-                            <img src="asssetsIC/Ellipse 475mentor-img.png" alt="mentor" class="i-mentor-img">
-                            <p class="i-mentor-name">Emerson Siphron</p>
-                            <p class="i-designation">UI UX Design . Apps Design</p>
-                            <p class="i-mentor-followed">+ Follow  Mentor</p>
-                            <p class="i-rating">4,5 (500 Reviews)</p>
-                         </div>
-                      </div>
-                      <div class="i-course-tracking">
-                         <div class="i-flex1">
-                            <div>
-                               <img src="asssetsIC/user (1).png" alt="">
-                               <p>500 student</p>
-                            </div>
-                            <div>
-                               <img src="asssetsIC/document.png" alt="">
-                               <p>5 module</p>
-                            </div>
-                            <div>
-                               <img src="asssetsIC/clock (2).png" alt="">
-                               <p>1h 30m</p>
-                            </div>
-                            <div class="i-flex1-last">
-                               <p>Master</p>
-                               <img src="asssetsIC/rangelevel (1).png" alt="">
-                            </div>
-                         </div>
-                      </div>
-                      <div class="i-toggle">
-                         <div class="i-toggle-flex">
-                            <div class="i-toggle-option active" id="0">About</div>
-                            <div class="i-toggle-option" id="1">Assignment</div>
-                            <div class="i-toggle-option" id="2">Tools</div>
-                            <div class="i-toggle-option" id="3">Review</div>
-                         </div>
-                         <div>
-                            <div class="i-toggle-content">
-                               <div class="i-toggle-description">
-                                  <h2>Description</h2>
-                                  <p>The community's need for applications that can facilitate daily activities is increasing as technology advances. Currently, many companies are looking for developers so that they can sell products (goods or services) that can reach wider buyers online. To become a developer, we are not required to understand all the science of design, but at least we can know the basics so that we can realize the design into code into a complete application more effectively. This class is the right medium to learn design and coding at the same time. With Mentor, you will create useful applications by adding animations to applications that are made to make them more interesting and interactive.</p>
-                                  <p>Our expert Mentors will explain how to create a furniture application from the design to code stage using the flagship Google Flutter SDK framework. By using the popular design tool Figma, you will learn the basics of creating interactive mockups as an illustration into an application or commonly known as a prototype. Then you will learn to apply animation between screens to make the prototype come alive. After that, the process will continue to slicing with a variety of ready-to-use Flutter Widgets so that the developer's work can be more efficient, saving time and effort.</p>
-                                  <p>This class is suitable for those of you who want to deepen complete mobile application development on the front-end side. Later the application that is successfully built can become a portfolio for applying for work or your personal business needs. If you encounter difficulties while studying, please ask our Mentor directly through the Telegram group, OK? Register now and we are waiting in class!</p>
-                                  <h2>Key Point</h2>
-                                  <div>
-                                     <div class="i-tick-circle">
-                                        <img src="asssetsIC/tick-circle.png" alt="tick-circle" class="i- tick-circle">
-                                        <p>Understand the basics of Prototype &amp; Animation</p>
-                                     </div>
-                                     <div class="i-tick-circle">
-                                        <img src="asssetsIC/tick-circle.png" alt="tick-circle" class="i- tick-circle">
-                                        <p>Understand the basics of MicroInteraction</p>
-                                     </div>
-                                     <div class="i-tick-circle">
-                                        <img src="asssetsIC/tick-circle.png" alt="tick-circle" class="i- tick-circle">
-                                        <p>Creating Animation (20 case studies) for mobile apps</p>
-                                     </div>
-                                     <div class="i-tick-circle">
-                                        <img src="asssetsIC/tick-circle.png" alt="tick-circle" class="i- tick-circle">
-                                        <p>Presenting designs using Animation</p>
-                                     </div>
-                                  </div>
-                               </div>
-                            </div>
-                         </div>
-                      </div>
-                   </div>
-                </div>
-             </div>
-          </div>
-          <div class="i-right">
-             <div class="db-course-info">
-                <div class="db-r-header">
-                   <p>Today</p>
-                   <div><img src="assets/arrow-leftlight-arrow.png" alt=""><img src="assets/arrow-rightdark-arrow.png" alt=""></div>
-                </div>
-                <img src="assets/course-info/photocourse-info.png" alt="">
-                <h3>UX Design : How To Implement Usability Testing</h3>
-                <div class="course-handler">
-                   <p>Alfredo Rhiel Madsen </p>
-                   <img src="assets/photomentor1.png" alt="">
-                </div>
-                <div class="flex1">
-                   <div>
-                      <img src="assets/course-info/user.png" alt="">
-                      <p>500 student</p>
-                   </div>
-                   <div>
-                      <img src="assets/course-info/document.png" alt="">
-                      <p>5 module</p>
-                   </div>
-                   <div>
-                      <img src="assets/course-info/clock.png" alt="">
-                      <p>1h 30 m</p>
-                   </div>
-                </div>
-                <div class="flex2">
-                   <h3>5 module</h3>
-                   <p>0/5 done</p>
-                </div>
-                <div class="where">
-                   <div>
-                      <p class="sl-no">1</p>
-                      <p>introduction</p>
-                      <p>10:00</p>
-                   </div>
-                   <div>
-                      <p class="sl-no">1</p>
-                      <p>introduction</p>
-                      <p>10:00</p>
-                   </div>
-                   <div>
-                      <p class="sl-no">1</p>
-                      <p>introduction</p>
-                      <p>10:00</p>
-                   </div>
-                   <div>
-                      <p class="sl-no">1</p>
-                      <p>introduction</p>
-                      <p>10:00</p>
-                   </div>
-                   <div>
-                      <p class="sl-no">1</p>
-                      <p>introduction</p>
-                      <p>10:00</p>
-                   </div>
-                </div>
-                <a href="/all-course"><button>Go To Detail</button></a>
-             </div>
-          </div>
-       </div>
-    </div>
-    <!--
-       This HTML file is a template.
-       If you open it directly in the browser, you will see an empty page.
-       
-       You can add webfonts, meta tags, or analytics to this file.
-       The build step will place the bundled scripts into the <body> tag.
-       
-       To begin the development, run `npm start` or `yarn start`.
-       To create a production bundle, use `npm run build` or `yarn build`.
-       -->
- </body>
+         <div>
+            <div class="i-header">
+               <h1>Explore Courses</h1>
+               <div class="i-login"><img src="assetsAc/notif (1).png" alt=""><img src="assetsAc/Rectangle 5997;ogin.png" alt=""></div>
+            </div>
+            <div class="i-main">
+               <div>
+                  <img src="asssetsIC/arrow-left.png" alt="arrow-left" class="i-arrow-left"><img src="asssetsIC/video.png" alt="video" class="i-video">
+                  <div class="i-course-description">
+                     <div class="i-course-main">
+                        <h1>Animation is the Key of Successfull UI/UX Design</h1>
+                        <div class="i-mentor-description">
+                           <img src="asssetsIC/Ellipse 475mentor-img.png" alt="mentor" class="i-mentor-img">
+                           <p class="i-mentor-name">Emerson Siphron</p>
+                           <p class="i-designation" style="
+                              display: none;
+                              ">UI UX Design . Apps Design</p>
+                           <p class="i-mentor-followed" onclick="handleFollow(this)">+ Follow Mentor</p>
+                           <p class="i-rating">4,5 (500 Reviews)</p>
+                        </div>
+                     </div>
+                     <div class="i-course-tracking">
+                        <div class="i-flex1">
+                           <div>
+                              <img src="asssetsIC/user (1).png" alt="">
+                              <p>500 student</p>
+                           </div>
+                           <div>
+                              <img src="asssetsIC/document.png" alt="">
+                              <p>5 module</p>
+                           </div>
+                           <div>
+                              <img src="asssetsIC/clock (2).png" alt="">
+                              <p>1h 30m</p>
+                           </div>
+                           <div class="i-flex1-last">
+                              <p>Master</p>
+                              <img src="asssetsIC/rangelevel (1).png" alt="">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="i-toggle">
+                        <div class="i-toggle-flex">
+                           <div class="i-toggle-option active" id="0" onclick="handleToggle(this)" >About</div>
+                           <div class="i-toggle-option" id="1" onclick="handleToggle(this)" >Assignment</div>
+                           <div class="i-toggle-option" id="2" onclick="handleToggle(this)" >Tools</div>
+                           <div class="i-toggle-option" id="3" onclick="handleToggle(this)" >Review</div>
+                        </div>
+                        <div>
+                           <div class="i-toggle-content">
+                              <div class="i-toggle-description">
+                                 <h2>Description</h2>
+                                 <p>The community's need for applications that can facilitate daily activities is increasing as technology advances. Currently, many companies are looking for developers so that they can sell products (goods or services) that can reach wider buyers online. To become a developer, we are not required to understand all the science of design, but at least we can know the basics so that we can realize the design into code into a complete application more effectively. This class is the right medium to learn design and coding at the same time. With Mentor, you will create useful applications by adding animations to applications that are made to make them more interesting and interactive.</p>
+                                 <p>Our expert Mentors will explain how to create a furniture application from the design to code stage using the flagship Google Flutter SDK framework. By using the popular design tool Figma, you will learn the basics of creating interactive mockups as an illustration into an application or commonly known as a prototype. Then you will learn to apply animation between screens to make the prototype come alive. After that, the process will continue to slicing with a variety of ready-to-use Flutter Widgets so that the developer's work can be more efficient, saving time and effort.</p>
+                                 <p>This class is suitable for those of you who want to deepen complete mobile application development on the front-end side. Later the application that is successfully built can become a portfolio for applying for work or your personal business needs. If you encounter difficulties while studying, please ask our Mentor directly through the Telegram group, OK? Register now and we are waiting in class!</p>
+                                 <h2>Key Point</h2>
+                                 <div>
+                                    <div class="i-tick-circle">
+                                       <img src="asssetsIC/tick-circle.png" alt="tick-circle" class="i- tick-circle">
+                                       <p>Understand the basics of Prototype &amp; Animation</p>
+                                    </div>
+                                    <div class="i-tick-circle">
+                                       <img src="asssetsIC/tick-circle.png" alt="tick-circle" class="i- tick-circle">
+                                       <p>Understand the basics of MicroInteraction</p>
+                                    </div>
+                                    <div class="i-tick-circle">
+                                       <img src="asssetsIC/tick-circle.png" alt="tick-circle" class="i- tick-circle">
+                                       <p>Creating Animation (20 case studies) for mobile apps</p>
+                                    </div>
+                                    <div class="i-tick-circle">
+                                       <img src="asssetsIC/tick-circle.png" alt="tick-circle" class="i- tick-circle">
+                                       <p>Presenting designs using Animation</p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div>
+                                 <h2>Assignment</h2>
+                              </div>
+                              <div>
+                                 <h2>Tools</h2>
+                              </div>
+                              <div>
+                                 <h2>Review</h2>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="i-right">
+            <div class="db-course-info">
+               <div class="db-r-header">
+                  <p>Today</p>
+                  <div><img src="assets/arrow-leftlight-arrow.png" alt=""><img src="assets/arrow-rightdark-arrow.png" alt=""></div>
+               </div>
+               <img src="assets/course-info/photocourse-info.png" alt="">
+               <h3>UX Design : How To Implement Usability Testing</h3>
+               <div class="course-handler">
+                  <p>Alfredo Rhiel Madsen </p>
+                  <img src="assets/photomentor1.png" alt="">
+               </div>
+               <div class="flex1">
+                  <div>
+                     <img src="assets/course-info/user.png" alt="">
+                     <p>500 student</p>
+                  </div>
+                  <div>
+                     <img src="assets/course-info/document.png" alt="">
+                     <p>5 module</p>
+                  </div>
+                  <div>
+                     <img src="assets/course-info/clock.png" alt="">
+                     <p>1h 30 m</p>
+                  </div>
+               </div>
+               <div class="flex2">
+                  <h3>5 module</h3>
+                  <p>0/5 done</p>
+               </div>
+               <div class="where">
+                  <div>
+                     <p class="sl-no">1</p>
+                     <p>introduction</p>
+                     <p>10:00</p>
+                  </div>
+                  <div>
+                     <p class="sl-no">1</p>
+                     <p>introduction</p>
+                     <p>10:00</p>
+                  </div>
+                  <div>
+                     <p class="sl-no">1</p>
+                     <p>introduction</p>
+                     <p>10:00</p>
+                  </div>
+                  <div>
+                     <p class="sl-no">1</p>
+                     <p>introduction</p>
+                     <p>10:00</p>
+                  </div>
+                  <div>
+                     <p class="sl-no">1</p>
+                     <p>introduction</p>
+                     <p>10:00</p>
+                  </div>
+               </div>
+               <a href="/all-course"><button>Go To Detail</button></a>
+            </div>
+         </div>
+      </div>
+      <div class="i-related-courses">
+         <div class="i-rc-heading">
+            <p>Related Courses</p>
+            <div><img src="assets/arrow-leftlight-arrow.png" alt="" class="prev"><img src="assets/arrow-rightdark-arrow.png" alt="" class="next"></div>
+         </div>
+         <div class="i-rc-courses">
+            <a class="course" href="/" style="text-decoration: none; color: black; cursor: pointer;">
+               <img src="assetsAc/photocourse1 (1).png" alt="">
+               <h3> course 1 Introduction Basic Programming HTML &amp; CSS</h3>
+               <div class="course-mentor">
+                  <div>
+                     <img src="assetsAc/Ellipse 474user1.png" alt="">
+                     <p>Alfredo Rhiel Madsen</p>
+                  </div>
+                  <p>4,5</p>
+               </div>
+               <div class="course-info">
+                  <div>
+                     <img src="assetsAc/userstudent.png" alt="">
+                     <p>500 student</p>
+                  </div>
+                  <div>
+                     <img src="assetsAc/documentmodule.png" alt="">
+                     <p>5 Module</p>
+                  </div>
+                  <div>
+                     <img src="assetsAc/clock (1).png" alt="">
+                     <p>1h 30m</p>
+                  </div>
+               </div>
+            </a>
+            <a class="course" href="/" style="text-decoration: none; color: black; cursor: pointer;">
+               <img src="assetsAc/photocourse1 (1).png" alt="">
+               <h3>Introduction Basic Programming HTML &amp; CSS</h3>
+               <div class="course-mentor">
+                  <div>
+                     <img src="assetsAc/Ellipse 474user1.png" alt="">
+                     <p>Alfredo Rhiel Madsen</p>
+                  </div>
+                  <p>4,5</p>
+               </div>
+               <div class="course-info">
+                  <div>
+                     <img src="assetsAc/userstudent.png" alt="">
+                     <p>500 student</p>
+                  </div>
+                  <div>
+                     <img src="assetsAc/documentmodule.png" alt="">
+                     <p>5 Module</p>
+                  </div>
+                  <div>
+                     <img src="assetsAc/clock (1).png" alt="">
+                     <p>1h 30m</p>
+                  </div>
+               </div>
+            </a>
+            <a class="course" href="/" style="text-decoration: none; color: black; cursor: pointer;">
+               <img src="assetsAc/photocourse1 (1).png" alt="">
+               <h3>Course 3 Introduction Basic Programming HTML &amp; CSS</h3>
+               <div class="course-mentor">
+                  <div>
+                     <img src="assetsAc/Ellipse 474user1.png" alt="">
+                     <p>Alfredo Rhiel Madsen</p>
+                  </div>
+                  <p>4,5</p>
+               </div>
+               <div class="course-info">
+                  <div>
+                     <img src="assetsAc/userstudent.png" alt="">
+                     <p>500 student</p>
+                  </div>
+                  <div>
+                     <img src="assetsAc/documentmodule.png" alt="">
+                     <p>5 Module</p>
+                  </div>
+                  <div>
+                     <img src="assetsAc/clock (1).png" alt="">
+                     <p>1h 30m</p>
+                  </div>
+               </div>
+            </a>
+         </div>
+      </div>
+   </div>
+   <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+      
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+      
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+      -->
+</body>
+
+
+
+
+
 </html>

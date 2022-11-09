@@ -7,6 +7,7 @@
     <title>Coursea</title>
     <link href="style.css" rel="stylesheet" />
     <link href="style copy.css" rel="stylesheet" />
+    <script src="script.js" defer></script>
 </head>
 <body>
     <noscript>
@@ -14,40 +15,43 @@
     </noscript>
     <div id="root">
        <div class="all-courses">
-          <div class="bg-white"><img src="assets/menuhamburger.png" alt="" class="hamburger"></div>
-          <img src="assets/closewrong.png" alt="" class="wrong">
+         <div class="bg-white">
+            <img src="assets/menuhamburger.png" alt="" class="hamburger" onclick="ShandleClickMenu(this)">
+         </div>
+          <img src="assets/closewrong.png" alt="" class="wrong" onclick="ShandleWrong(this)">
           <div class="side-bar">
-             <div class="logo">
-                <img src="assets/Unionlogo.png" alt="logo" class="logo">
-                <h2 class="logo-name">Coursea</h2>
-             </div>
-             <div class="nav">
-                <div class="nav-menu">
-                   <a class="menu active" href="/">
-                      <img src="assets/element-4overview.png" alt="logo">
-                      <p>Overview</p>
-                   </a>
-                   <a class="menu" href="/all-course">
-                      <img src="assets/bookcourses.png" alt="logo">
-                      <p>Courses</p>
-                      <img src="assets/arrow-leftlight-arrow.png" alt="" class="rotate light"><img src="assets/arrow-rightdark-arrow.png" alt="" class="rotate dark">
-                   </a>
-                   <div class="menu">
-                      <img src="assets/user-octagonmentors.png" alt="logo">
-                      <p>Mentors</p>
-                   </div>
-                   <div class="menu">
-                      <img src="assets/message.png" alt="logo">
-                      <p>Message</p>
-                   </div>
-                   <div class="menu">
-                      <img src="assets/setting-4setting.png" alt="logo">
-                      <p>setting</p>
-                   </div>
-                   <a class="upgrade" href="/purchase"><img src="assets/upgrade pro.png" alt="upgrade"></a>
-                </div>
-             </div>
-          </div>
+            <div class="logo">
+               <img src="assets/Unionlogo.png" alt="logo" class="logo">
+               <h2 class="logo-name">Coursea</h2>
+            </div>
+
+            <div class="nav">
+               <div class="nav-menu">
+                  <a class="menu" href="/dashboard1/index.html" onclick="handleMenuActive(this)">
+                     <img src="assets/element-4overview.png" alt="logo">
+                     <p>Overview</p>
+                  </a>
+                  <a class="menu active" href="/allCourse1/index.html" onclick="handleMenuActive(this)">
+                     <img src="assets/bookcourses.png" alt="logo">
+                     <p>Courses</p>
+                     <img src="assets/arrow-leftlight-arrow.png" alt="" class="rotate light"><img src="assets/arrow-rightdark-arrow.png" alt="" class="rotate dark">
+                  </a>
+                  <div class="menu" onclick="handleMenuActive(this)">
+                     <img src="assets/user-octagonmentors.png" alt="logo">
+                     <p>Mentors</p>
+                  </div>
+                  <div class="menu" onclick="handleMenuActive(this)">
+                     <img src="assets/message.png" alt="logo">
+                     <p>Message</p>
+                  </div>
+                  <div class="menu" onclick="handleMenuActive(this)">
+                     <img src="assets/setting-4setting.png" alt="logo">
+                     <p>setting</p>
+                  </div>
+                  <a class="upgrade" href="/purchase"><img src="assets/upgrade pro.png" alt="upgrade"></a>
+               </div>
+            </div>
+         </div>
           <div class="ac-center">
              <div class="header">
                 <div class="header1">
@@ -58,7 +62,7 @@
                    <div class="input"><input type="text" placeholder="Search  Course Name/Mentor"></div>
                    <div>
                       <div>
-                         <div class="sort-click">
+                         <div class="sort-click" onclick="handleSortClick(this)">
                             <img src="assetsAc/rangelevel.png" alt="">
                             <p>level</p>
                          </div>
@@ -73,7 +77,7 @@
                          </div>
                       </div>
                       <div>
-                         <div class="sort-click">
+                         <div class="sort-click" onclick="handleSortClick(this)">
                             <img src="assetsAc/element-1category.png" alt="">
                             <p>category</p>
                          </div>
@@ -88,7 +92,7 @@
                          </div>
                       </div>
                       <div>
-                         <div class="sort-click">
+                         <div class="sort-click" onclick="handleSortClick(this)">
                             <img src="assetsAc/sort.png" alt="">
                             <p>sort By: popular</p>
                          </div>

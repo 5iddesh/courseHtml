@@ -63,6 +63,7 @@ cursor: pointer;
     line-height: 200%;
     cursor: pointer;
     color: #04A4F4;
+    margin-left: 15px;
 }
 .i-mentor-not-followed{
     font-weight: 400;
@@ -70,6 +71,7 @@ cursor: pointer;
     line-height: 200%;
     cursor: pointer;
     color: #9C9CA4;
+    margin-left: 15px;
 }
 .i-flex1{
     display: flex;
@@ -128,13 +130,14 @@ cursor: pointer;
     line-height: 28px;
     letter-spacing: 0px;
     text-align: left;
+    margin-bottom: 25px;
 }
 
 .i-tick-circle{
     display: flex;
     gap: 15px;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .i-right{
@@ -142,15 +145,76 @@ cursor: pointer;
     margin-left: 4%;
     margin-top: 50px;
 }
+.i-rc-courses{
+    padding-right: 5%;
+    margin-top: 30px;
+    align-self: flex-end;
+    justify-self: flex-end;
+    display: flex;
+    justify-content: flex-start;
+    gap: 5%;
+    flex-wrap: wrap;
+}
+.i-related-courses{
+    margin-top: 50px;
+    padding-left: 22%;
+    padding-right: 5%;
+}
+
+.i-rc-heading{
+    font-weight: 700;
+font-size: 32px;
+line-height: 150%;
+/* identical to box height, or 48px */
+
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+/* Neutral/Black */
+
+color: #141522;
+}
+
+.i-rc-heading .prev, .i-rc-heading .next{
+
+    width: 24px;
+    height: 24px;
+}
+
+
+.i-toggle-content > div{
+    display: none;
+}
+.i-toggle-content .i-toggle-description{
+    display: block;
+}
 
 
 
-
-@media screen and (max-width:700px){
+@media screen and (max-width:1100px){
+    .inside-course{
+        margin-left: 5%;
+    }
     .i-header{
-        margin-inline: 5%;
+        margin-top: 47px;
+    }
+    .i-main{
+        width: 60vw;
+    }
+    .bg-white{
+        width: 100vw;
+        top: 0;
+        left: 0;
+    }
+    .i-related-courses{
+        padding-left: 5%;
+    }
+    .course{
+        width: 40%;
     }
 }
+
 
 @media screen and (max-width:800px){
     .i-header{
@@ -162,5 +226,63 @@ cursor: pointer;
         margin-top: -70px;
         margin-bottom: 15px;
         z-index: 10;
+    }
+    .i-right{
+        display: none;
+    }
+    .i-main{
+        width: 87vw;
+    }
+}
+
+
+
+@media screen and (max-width:700px){
+    .i-header{
+        margin-inline: 5%;
+    }
+    .i-designation{
+        display: none;
+    }
+}
+
+
+
+
+@media screen and (max-width:500px){
+    .i-header{
+        margin-top: 47px;
+    }
+    .i-right{
+        display: none;
+    }
+    .i-course-description{
+        margin: unset;
+    }
+    .i-related-courses{
+        flex-direction: column;
+        padding-left: 20px;
+        padding-right: 10px;
+    }
+    .i-rc-courses{
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .i-designation{
+        display: none;
+    }
+    .inside-course{
+        margin-left: 0;
+    }
+
+    .i-main{
+        width: unset;
+    }
+    .i-mentor-description{
+        flex-wrap: wrap;
+    }
+    .i-flex1{
+        flex-wrap: wrap;
     }
 }

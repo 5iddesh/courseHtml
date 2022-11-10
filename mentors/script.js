@@ -36,19 +36,31 @@ function ShandleClickMenu(e) {
 }
 
 function handleMenuActive(e){
-  // console.log(e)
-  let temp = e;
-  if(!e.classList.contains("menu")){
-      temp = e.closest(".menu")
+    // console.log(e)
+    let temp = e;
+    if(!e.classList.contains("menu")){
+        temp = e.closest(".menu")
+    }
+    console.log(temp)
+  
+    if(temp.querySelector("p").innerText == "Courses") {
+      console.log(temp, "courses")
+      let links = document.querySelector(".course-hidden");
+      if(links.style.display != "block"){
+        links.style.display = "block";
+      }else{
+        links.style.display = "none";
+  
+      }
+    }
+    if(!temp.classList.contains("active")){
+        let menus = document.querySelectorAll(".menu");
+        menus.forEach(menu => menu.classList.remove("active"));
+        temp.classList.add("active")
+        console.log(menus)
+    }
   }
-  console.log(temp)
-  if(!temp.classList.contains("active")){
-      let menus = document.querySelectorAll(".menu");
-      menus.forEach(menu => menu.classList.remove("active"));
-      temp.classList.add("active")
-      console.log(menus)
-  }
-}
+
 
 
 function handleMFollow(e){

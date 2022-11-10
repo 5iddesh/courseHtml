@@ -31,6 +31,7 @@ function ShandleClickMenu(e) {
     }
 }
 
+
 function handleMenuActive(e){
   // console.log(e)
   let temp = e;
@@ -38,6 +39,17 @@ function handleMenuActive(e){
       temp = e.closest(".menu")
   }
   console.log(temp)
+
+  if(temp.querySelector("p").innerText == "Courses") {
+    console.log(temp, "courses")
+    let links = document.querySelector(".course-hidden");
+    if(links.style.display != "block"){
+      links.style.display = "block";
+    }else{
+      links.style.display = "none";
+
+    }
+  }
   if(!temp.classList.contains("active")){
       let menus = document.querySelectorAll(".menu");
       menus.forEach(menu => menu.classList.remove("active"));
@@ -45,7 +57,6 @@ function handleMenuActive(e){
       console.log(menus)
   }
 }
-
 function handleFollow(e){
     const mentor = e;
 

@@ -17,43 +17,52 @@
     </noscript>
     <div id="root">
        <div class="main">
-          <div class="bg-white">
+        <div class="bg-white">
             <img src="assets/menuhamburger.png" alt="" class="hamburger" onclick="ShandleClickMenu(this)">
-            </div>
+         </div>
           <img src="assets/closewrong.png" alt="" class="wrong" onclick="ShandleWrong(this)">
           <div class="side-bar">
-             <div class="logo">
-                <img src="assets/Unionlogo.png" alt="logo" class="logo">
-                <h2 class="logo-name">Coursea</h2>
-             </div>
+            <div class="logo">
+               <img src="assets/Unionlogo.png" alt="logo" class="logo">
+               <h2 class="logo-name">Coursea</h2>
+            </div>
 
-             <div class="nav">
-                <div class="nav-menu">
-                   <a class="menu" href="/dashboard1/index.html" onclick="handleMenuActive(this)">
-                      <img src="assets/element-4overview.png" alt="logo">
-                      <p>Overview</p>
-                   </a>
-                   <a class="menu" href="/allCourse1/index.html" onclick="handleMenuActive(this)">
-                      <img src="assets/bookcourses.png" alt="logo">
-                      <p>Courses</p>
-                      <img src="assets/arrow-leftlight-arrow.png" alt="" class="rotate light"><img src="assets/arrow-rightdark-arrow.png" alt="" class="rotate dark">
-                   </a>
-                   <a class="menu active" href="/mentors/index.html" onclick="handleMenuActive(this)">
-                      <img src="assets/user-octagonmentors.png" alt="logo">
-                      <p>Mentors</p>
-                   </a>
-                   <div class="menu" onclick="handleMenuActive(this)">
-                      <img src="assets/message.png" alt="logo">
-                      <p>Message</p>
-                   </div>
-                   <div class="menu" onclick="handleMenuActive(this)">
-                      <img src="assets/setting-4setting.png" alt="logo">
-                      <p>setting</p>
-                   </div>
-                   <a class="upgrade" href="/purchase"><img src="assets/upgrade pro.png" alt="upgrade"></a>
-                </div>
-             </div>
-          </div>
+            <div class="nav">
+               <div class="nav-menu">
+                  <a class="menu" href="/dashboard1/index.html" onclick="handleMenuActive(this)">
+                     <img src="assets/element-4overview.png" alt="logo">
+                     <p>Overview</p>
+                  </a>
+                  <div class="menu" onclick="handleMenuActive(this)" id="course-menu">
+                     <img src="assets/bookcourses.png" alt="logo">
+                     <p>Courses</p>
+                     <img src="assets/arrow-leftlight-arrow.png" alt="" class="rotate light"><img src="assets/arrow-rightdark-arrow.png" alt="" class="rotate dark">
+
+                        <div class="course-hidden">
+                           <a href="../allCourse1/index.html">Explore course</a>
+                           <a href="../myCourses/index.html">My courses</a>
+                        </div>
+                  </div>
+
+
+
+                  <a class="menu active" href="/mentors/index.html" onclick="handleMenuActive(this)">
+                     <img src="assets/user-octagonmentors.png" alt="logo">
+                     <p>Mentors</p>
+                  </a>
+                  <div class="menu" onclick="handleMenuActive(this)">
+                     <img src="assets/message.png" alt="logo">
+                     <p>Message</p>
+                  </div>
+                  <div class="menu" onclick="handleMenuActive(this)">
+                     <img src="assets/setting-4setting.png" alt="logo">
+                     <p>setting</p>
+                  </div>
+                  <a class="upgrade" href="/purchase"><img src="assets/upgrade pro.png" alt="upgrade"></a>
+               </div>
+            </div>
+         </div>
+
 
         <div class="m-center">
 

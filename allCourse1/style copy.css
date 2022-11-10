@@ -678,6 +678,9 @@ margin-bottom: 30px;
     .hamburger{
         display: none;
     }
+    .wrong{
+        display: none;
+    }
 }
 
 

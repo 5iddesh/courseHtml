@@ -8,6 +8,7 @@
     <link href="style.css" rel="stylesheet" />
     <link href="style copy.css" rel="stylesheet" />
     <script src="script.js" defer></script>
+
 </head>
 <body>
     <noscript>
@@ -31,11 +32,19 @@
                      <img src="assets/element-4overview.png" alt="logo">
                      <p>Overview</p>
                   </a>
-                  <a class="menu active" href="/allCourse1/index.html" onclick="handleMenuActive(this)">
+                  <div class="menu active" onclick="handleMenuActive(this)" id="course-menu">
                      <img src="assets/bookcourses.png" alt="logo">
                      <p>Courses</p>
                      <img src="assets/arrow-leftlight-arrow.png" alt="" class="rotate light"><img src="assets/arrow-rightdark-arrow.png" alt="" class="rotate dark">
-                  </a>
+
+                        <div class="course-hidden">
+                           <a href="../insideCourse1/index.html">Explore course</a>
+                           <a href="../myCourses/index.html">My courses</a>
+                        </div>
+                  </div>
+
+
+
                   <a class="menu" href="/mentors/index.html" onclick="handleMenuActive(this)">
                      <img src="assets/user-octagonmentors.png" alt="logo">
                      <p>Mentors</p>

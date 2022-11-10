@@ -60,7 +60,7 @@
 
             <div class="m-header">
                 <div class="m-header1">
-                    <h1>Mentors</h1>
+                    <h1>My Courses</h1>
                     <div class="m-login">
                         <img src="assets/notif.png" alt="">
                         <img src="assets/Rectangle 5997login-image.png" alt="" >
@@ -68,35 +68,81 @@
                 </div>
                 <div class="m-header2">
                     <div class="m-search">
-                        <input type="text" placeholder="search Mentor here" class="m-search-input" >
+                        <input type="text" placeholder="search your course here" class="m-search-input" >
                         <img src="assets/search-normal.svg" alt="" onclick="handleMSearch()" >
                     </div>
-                    <div class="m-sort">
+
+
+
+                    <div class="myc-sorts">
                         <div>
-                            <img src="assets/element-1category.png" alt="">
-                            <p>Category</p>
+                           <div name="level" class="myc-sort-click" onclick="handleSortClick(this)">
+                              <img src="assetsAc/rangelevel.png" alt="">
+                              <p>level</p>
+                           </div>
+                           <div class="myc-sort-options level">
+                              <h2>By Level</h2>
+                              <div>
+                                 <div class="myc-sort-option">All</div>
+                                 <div class="myc-sort-option">intermediate</div>
+                                 <div class="myc-sort-option active">Beginer</div>
+                                 <div class="myc-sort-option">Master</div>
+                              </div>
+                           </div>
                         </div>
                         <div>
-                            <img src="assets/sort.png" alt="">
-                            <p>sort By popular</p>
+                           <div class="myc-sort-click" onclick="handleSortClick(this)">
+                              <img src="assetsAc/element-1category.png" alt="">
+                              <p>category</p>
+                           </div>
+                           <div class="myc-sort-options">
+                              <h2>By category</h2>
+                              <div>
+                                 <div class="myc-sort-option">All</div>
+                                 <div class="myc-sort-option active">intermediate</div>
+                                 <div class="myc-sort-option">Beginer</div>
+                                 <div class="myc-sort-option">Master</div>
+                              </div>
+                           </div>
                         </div>
-                    </div>
+                        <div>
+                           <div class="myc-sort-click" onclick="handleSortClick(this)">
+                              <img src="assetsAc/sort.png" alt="">
+                              <p>sort By: popular</p>
+                           </div>
+                           <div class="myc-sort-options">
+                              <h2>By popular</h2>
+                              <div>
+                                 <div class="myc-sort-option">All</div>
+                                 <div class="myc-sort-option active">intermediate</div>
+                                 <div class="myc-sort-option">Beginer</div>
+                                 <div class="myc-sort-option">Master</div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+
                 </div>
             </div>
 
 
             <div class="myc-courses">
 
-                <div class="myc-course">
-                    <img src="assetsmyc/photomyc1.png" alt="">
+                <div class="myc-course Master All">
+                    <a href="../insideCourse1/index.html"><img src="assetsmyc/photomyc1.png" alt=""></a>
                     <div class="myc-description">
-                        <h2>Introduction Basic Programming HTML & CSS</h2>
-                        <div class="myc-flex1">
+                        <a href="../insideCourse1/index.html"><h2>Introduction Basic Programming HTML & CSS</h2></a>
+                        <a href="../mentors/index.html" class="myc-flex1">
                             <img src="assetsm/photom1.png" alt="">
                             <p class="myc-name">Emerson Siphron</p>
-                            <p>4,5</p>
+                            <p class="myc-rating">4,5</p>
+                        </a>
+                        <div class="myc-complete">
+
+                            <div class="myc-bg-green"></div>
+                            <div class="myc-bg-gray"></div>
                         </div>
-                        <div class="bg-green"></div>
                         <div class="myc-flex2">
                             <p>3/5 Module</p>
                             <p>60%</p>
@@ -104,147 +150,45 @@
                     </div>
                 </div>
 
-                <div class="m-mentor">
-                    <div class="m-flex1">
-                        <img src="assetsm/photom3.png" alt="">
-                        <div>
-                            <h3>kjdshf ksdfj</h3>
-                            <p>UI UX design</p>
+                <div class="myc-course Master All">
+                    <img src="assetsmyc/photomyc1.png" alt="">
+                    <div class="myc-description">
+                        <h2>Introduction Basic Programming HTML & CSS</h2>
+                        <div class="myc-flex1">
+                            <img src="assetsm/photom1.png" alt="">
+                            <p class="myc-name">Emerson Siphron</p>
+                            <p class="myc-rating">4,5</p>
                         </div>
-                        <p class="">+Follow</p>
-                    </div>
-                    <div class="m-flex2">
-                        <div>
-                            <img src="assets/documentmodule.png" alt="">
-                            <p>50 Module</p>
+                        <div class="myc-complete">
+
+                            <div class="myc-bg-yellow"></div>
+                            <div class="myc-bg-gray"></div>
                         </div>
-                        <p class="rating">4.5(2500 Reviews)</p>
+                        <div class="myc-flex2">
+                            <p>3/5 Module</p>
+                            <p>60%</p>
+                        </div>
                     </div>
                 </div>
 
-                <div class="m-mentor">
-                    <div class="m-flex1">
-                        <img src="assetsm/photom4.png" alt="">
-                        <div>
-                            <h3>kjdshf ksdfj</h3>
-                            <p>UI UX design</p>
+                <div class="myc-course All Beginer">
+                    <img src="assetsmyc/photomyc1.png" alt="">
+                    <div class="myc-description">
+                        <h2>Introduction Basic Programming HTML & CSS</h2>
+                        <div class="myc-flex1">
+                            <img src="assetsm/photom1.png" alt="">
+                            <p class="myc-name">Emerson Siphron</p>
+                            <p class="myc-rating">4,5</p>
                         </div>
-                        <p class="">+Follow</p>
-                    </div>
-                    <div class="m-flex2">
-                        <div>
-                            <img src="assets/documentmodule.png" alt="">
-                            <p>50 Module</p>
-                        </div>
-                        <p class="rating">4.5(2500 Reviews)</p>
-                    </div>
-                </div>
+                        <div class="myc-complete">
 
-                <div class="m-mentor">
-                    <div class="m-flex1">
-                        <img src="assetsm/photom6.png" alt="">
-                        <div>
-                            <h3>kjdshf ksdfj</h3>
-                            <p>cloud engineer</p>
+                            <div class="myc-bg-yellow"></div>
+                            <div class="myc-bg-gray"></div>
                         </div>
-                        <p class="">+Follow</p>
-                    </div>
-                    <div class="m-flex2">
-                        <div>
-                            <img src="assets/documentmodule.png" alt="">
-                            <p>50 Module</p>
+                        <div class="myc-flex2">
+                            <p>3/5 Module</p>
+                            <p>60%</p>
                         </div>
-                        <p class="rating">4.5(2500 Reviews)</p>
-                    </div>
-                </div>
-
-                <div class="m-mentor">
-                    <div class="m-flex1">
-                        <img src="assetsm/photom5.png" alt="">
-                        <div>
-                            <h3>john snow</h3>
-                            <p>UI UX design</p>
-                        </div>
-                        <p class="m-followed">Followed</p>
-                    </div>
-                    <div class="m-flex2">
-                        <div>
-                            <img src="assets/documentmodule.png" alt="">
-                            <p>50 Module</p>
-                        </div>
-                        <p class="rating">4.5(2500 Reviews)</p>
-                    </div>
-                </div>
-                
-                <div class="m-mentor">
-                    <div class="m-flex1">
-                        <img src="assetsm/photom3.png" alt="">
-                        <div>
-                            <h3>Robert junior</h3>
-                            <p>Tester</p>
-                        </div>
-                        <p class="">+Follow</p>
-                    </div>
-                    <div class="m-flex2">
-                        <div>
-                            <img src="assets/documentmodule.png" alt="">
-                            <p>50 Module</p>
-                        </div>
-                        <p class="rating">4.5(2500 Reviews)</p>
-                    </div>
-                </div>
-
-                <div class="m-mentor">
-                    <div class="m-flex1">
-                        <img src="assetsm/photom3.png" alt="">
-                        <div>
-                            <h3>kjdshf ksdfj</h3>
-                            <p>UI UX design</p>
-                        </div>
-                        <p class="">+Follow</p>
-                    </div>
-                    <div class="m-flex2">
-                        <div>
-                            <img src="assets/documentmodule.png" alt="">
-                            <p>50 Module</p>
-                        </div>
-                        <p class="rating">4.5(2500 Reviews)</p>
-                    </div>
-                </div>
-
-                <div class="m-mentor">
-                    <div class="m-flex1">
-                        <img src="assetsm/photom3.png" alt="">
-                        <div>
-                            <h3>kjdshf ksdfj</h3>
-                            <p>UI UX design</p>
-                        </div>
-                        <p class="">+Follow</p>
-                    </div>
-                    <div class="m-flex2">
-                        <div>
-                            <img src="assets/documentmodule.png" alt="">
-                            <p>50 Module</p>
-                        </div>
-                        <p class="rating">4.5(2500 Reviews)</p>
-                    </div>
-                </div>
-
-                <div class="m-mentor">
-                    <div class="m-flex1">
-                        <img src="assetsm/photom3.png" alt="">
-                        <div>
-                            <h3>kjdshf ksdfj</h3>
-                            <p>UI UX design</p>
-                        </div>
-                        <p class="">+Follow</p>
-                    </div>
-                    <div class="m-flex2">
-                        <div>
-                            <img src="assets/documentmodule.png" alt="">
-                            <p>50 Module</p>
-                        </div>
-                        <p class="rating">4.5(2500 Reviews)</p>
                     </div>
                 </div>
 

@@ -54,7 +54,7 @@ function handleMenuActive(e){
 function handleMFollow(e){
     if(e.target.classList.contains("m-followed")) {
         e.target.classList.remove("m-followed")
-        e.target.innerText = "Follow"
+        e.target.innerText = "+Follow"
     }else {
         e.target.classList.add("m-followed")
         e.target.innerText = "Followed"
